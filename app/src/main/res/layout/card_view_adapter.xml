@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardView"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="4dp"
+        card_view:cardUseCompatPadding="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_front"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                app:border_width="0.5dp"
+                android:layout_marginRight="16dp"
+                android:layout_alignParentLeft="true"
+                app:border_color="@color/cardview_light_background"
+                android:src="@drawable/image_one" />
+
+            <TextView
+                android:id="@+id/txtPersonName"
+                android:layout_toRightOf="@id/profile_front"
+                android:text="Rodrigo"
+                android:textSize="22dp"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtPersonLastName"
+                android:text="Vazquez"
+                android:layout_toRightOf="@id/profile_front"
+                android:layout_below="@id/txtPersonName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtPersonJob"
+                android:text="Developer"
+                android:layout_toRightOf="@id/profile_front"
+                android:textSize="12dp"
+                android:layout_below="@id/txtPersonLastName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_below="@id/txtPersonLastName"
+                android:src="@drawable/ic_action_not_important"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+    
+</LinearLayout>

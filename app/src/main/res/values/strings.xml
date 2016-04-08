@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">CardViewApplication</string>
+
+    <array name="person_names">
+        <item>Rodrigo</item>
+        <item>Isaac</item>
+        <item>Jaime</item>
+        <item>Luis Carlos</item>
+        <item>Giovanny</item>
+        <item>Alfredo</item>
+        <item>Manuel</item>
+        <item>Edson</item>
+        <item>Luis Alonso</item>
+        <item>Luis Raul</item>
+    </array>
+
+    <string name="person_lastname">Intelectix</string>
+    <string name="person_job">Developer</string>
 </resources>
